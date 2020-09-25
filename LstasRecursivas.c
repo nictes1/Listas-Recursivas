@@ -20,41 +20,97 @@ int Sumar_Lista_Recursivamente (nodo * lista)
 {
     int suma;
 
-    if(!lista)
+    if(lista!=NULL)
     {
-        suma = 0;
+        suma = lista->dato.edad + Sumar_Lista_Recursivamente(lista->siguiente);
     }
     else
     {
-        suma = lista->dato.edad + Sumar_Lista_Recursivamente(lista->siguiente);
+        suma=0;
     }
 
     return suma;
 }
 
 //3. Mostrar los elementos de una lista ubicados en una posición par.
-void Mostrar_Elementos_Pares_Recursion (nodo * lista)
+void Mostrar_Elementos_Pares_Recursion (nodo * lista)  ///Arranca de 1
 {
-    if(lista)
+
+    nodo * aux = lista;
+
+    if(aux)
     {
-        if(lista->dato.edad %2 == 0))
+        MostrarNodo(aux);
+        aux = aux->siguiente;
+        if(aux)
         {
-            MostrarNodo(lista);
-            Mostrar_Elementos_Pares_Recursion(lista->siguiente);
+            Mostrar_Elementos_Pares_Recursion(aux->siguiente);
         }
     }
 }
 
 // 4. Invertir una lista cambiando los vínculos.
+
 nodo * Invertir_Lista_Recursion (nodo * lista)
 {
+     nodo * aux;
+     nodo * invertida;
+
     if(lista)
     {
-
+        aux = lista;
+//        aux->siguiente=NULL;
+        invertida = AgregarFinal(invertida,aux);
+        invertida = Invertir_Lista_Recursion(lista->siguiente);
     }
+
+    return invertida;
 }
 
 
+//5. Borrar un nodo recursivo
+nodo * Borrar_Nodo_Lista (nodo * lista, int dato)
+{
+    nodo * aux;
+
+    if(lista)
+    {
+        if(lista->dato.edad == dato)
+        {
+            aux = lista;
+            lista=lista->siguiente;
+            free(aux);
+        }
+        else
+        {
+            lista->siguiente=Borrar_Nodo_Lista(lista->siguiente,dato);
+        }
+    }
+    return lista;
+}
+
+//6. Insertar un nodo en una lista en forma recursiva
+nodo * Insertar_Nodo_Recursivo_Orden(nodo * lista, nodo * nuevo)
+{
+    if(!lista)
+    {
+       lista=nuevo;
+    }
+    else
+    {
+        if(lista->dato.edad > nuevo->dato.edad)
+        {
+            nuevo->siguiente = lista;
+            lista = nuevo;
+        }
+        else
+        {
+            lista->siguiente = Insertar_Nodo_Recursivo_Orden (lista->siguiente, nuevo);
+        }
+    }
+
+    return lista;
+}
 
 
 

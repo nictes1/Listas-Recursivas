@@ -1,10 +1,10 @@
 # depslib dependency file v1.0
-1600484014 source:n:\nico\programacion\segundo cuatrimestre\laboratorio y programacion 2\trabajos practicos\trabajos practicos\listas recursivas\listasc.c
+1600983068 source:n:\nico\programacion\segundo cuatrimestre\laboratorio y programacion 2\trabajos practicos\trabajos practicos\listas recursivas\listasc.c
 	"Listas.h"
 	"Persona.h"
 	"ListasRecursivas.h"
 
-1600484014 n:\nico\programacion\segundo cuatrimestre\laboratorio y programacion 2\trabajos practicos\trabajos practicos\listas recursivas\listas.h
+1600983069 n:\nico\programacion\segundo cuatrimestre\laboratorio y programacion 2\trabajos practicos\trabajos practicos\listas recursivas\listas.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -15,14 +15,15 @@
 	<stdlib.h>
 	<string.h>
 
-1600484014 n:\nico\programacion\segundo cuatrimestre\laboratorio y programacion 2\trabajos practicos\trabajos practicos\listas recursivas\listasrecursivas.h
+1600983797 n:\nico\programacion\segundo cuatrimestre\laboratorio y programacion 2\trabajos practicos\trabajos practicos\listas recursivas\listasrecursivas.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	<string.h>
 	"Listas.h"
+	"Persona.h"
 
-1600484014 source:n:\nico\programacion\segundo cuatrimestre\laboratorio y programacion 2\trabajos practicos\trabajos practicos\listas recursivas\main.c
+1600993570 source:n:\nico\programacion\segundo cuatrimestre\laboratorio y programacion 2\trabajos practicos\trabajos practicos\listas recursivas\main.c
 	<stdio.h>
 	<stdlib.h>
 	"string.h"
@@ -30,7 +31,7 @@
 	"Persona.h"
 	"ListasRecursivas.h"
 
-1600484267 source:n:\nico\programacion\segundo cuatrimestre\laboratorio y programacion 2\trabajos practicos\trabajos practicos\listas recursivas\lstasrecursivas.c
+1600983822 source:n:\nico\programacion\segundo cuatrimestre\laboratorio y programacion 2\trabajos practicos\trabajos practicos\listas recursivas\lstasrecursivas.c
 	<stdio.h>
 	<stdlib.h>
 	"Listas.h"

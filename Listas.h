@@ -31,5 +31,6 @@ void MostrarNodo(nodo * aux);
 void MostrarLista(nodo * lista);
 nodo * DeleteFirstNode (nodo * lista);
 nodo * DeleteLatestNode (nodo * lista);
+nodo * desvincularFirstNode (nodo **lista);
 
 #endif // LISTAS_H_INCLUDED

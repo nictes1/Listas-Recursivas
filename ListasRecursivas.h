@@ -7,10 +7,12 @@
 #include <string.h>
 
 #include "Listas.h"
+#include "Persona.h"
 
-
-
-
-
+void Recorre_Mostrar_Recursivamente (nodo * lista);
+int Sumar_Lista_Recursivamente (nodo * lista);
+void Mostrar_Elementos_Pares_Recursion (nodo * lista);
+nodo * Invertir_Lista_Recursion (nodo * lista);
+nodo * Borrar_Nodo_Lista (nodo * lista, int dato);
 
 #endif // LISTASRECURSIVAS_H_INCLUDED

@@ -23,7 +23,7 @@ nodo *CrearNodo(persona dato)
 
 nodo *AgregarPricipio (nodo *lista, nodo *nuevo_nodo)
 {
-    if (lista=NULL)
+    if (lista == NULL)
     {
         lista = nuevo_nodo;
     }
@@ -182,7 +182,7 @@ void MostrarLista(nodo * lista)
 {
     nodo * aux = lista;
 
-    if(aux!=NULL)
+    while(aux!=NULL)
     {
         MostrarNodo(aux);
         aux = aux->siguiente;
@@ -221,6 +221,18 @@ nodo * DeleteLatestNode (nodo * lista)
 
 }
 
+nodo * desvincularFirstNode (nodo **lista)
+{
+    nodo * aux = *lista;
+
+    if(*lista)
+    {
+        *lista = (*lista)->siguiente;
+        aux->siguiente = NULL;
+    }
+
+    return aux;
+}
 
 
 
