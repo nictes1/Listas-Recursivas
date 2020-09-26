@@ -6,12 +6,21 @@
 
 
 //1. Recorrer una lista y mostrarla en forma invertida.
-void Recorre_Mostrar_Recursivamente (nodo * lista)
+void Mostrar_Lista_Recursivamente (nodo * lista)
 {
     if(lista)
     {
         MostrarNodo(lista);
-        Recorre_Mostrar_Recursivamente(lista->siguiente);
+        Mostrar_Lista_Recursivamente(lista->siguiente);
+    }
+}
+
+void Mostrar_Lista_Recursivamente_Invertido(nodo * lista)
+{
+    if(lista)
+    {
+        Mostrar_Lista_Recursivamente_Invertido(lista->siguiente);
+        MostrarNodo(lista);
     }
 }
 
@@ -30,6 +39,11 @@ int Sumar_Lista_Recursivamente (nodo * lista)
     }
 
     return suma;
+}
+
+int Suma_recursiva_otro (nodo * lista)
+{
+    return (lista)?lista->dato.edad+Suma_recursiva_otro(lista->siguiente):0;
 }
 
 //3. Mostrar los elementos de una lista ubicados en una posición par.
@@ -53,18 +67,19 @@ void Mostrar_Elementos_Pares_Recursion (nodo * lista)  ///Arranca de 1
 
 nodo * Invertir_Lista_Recursion (nodo * lista)
 {
-     nodo * aux;
-     nodo * invertida;
+    nodo * aux = NULL;
 
     if(lista)
     {
         aux = lista;
-//        aux->siguiente=NULL;
-        invertida = AgregarFinal(invertida,aux);
-        invertida = Invertir_Lista_Recursion(lista->siguiente);
-    }
 
-    return invertida;
+        lista = lista->siguiente;
+
+        aux->siguiente = NULL;
+
+        lista = AgregarFinal(Invertir_Lista_Recursion(lista),aux);
+    }
+    return lista;
 }
 
 
@@ -78,7 +93,7 @@ nodo * Borrar_Nodo_Lista (nodo * lista, int dato)
         if(lista->dato.edad == dato)
         {
             aux = lista;
-            lista=lista->siguiente;
+            lista = lista->siguiente;
             free(aux);
         }
         else

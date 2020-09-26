@@ -40,10 +40,14 @@ nodo *BuscarUltimoNodo (nodo *lista)
 {
     nodo * seg = lista;
 
-    if(seg!=NULL)
+    if(seg)
     {
-        seg = seg->siguiente;
+        while(seg->siguiente)
+        {
+            seg = seg->siguiente;
+        }
     }
+
     return seg;
 }
 
@@ -67,7 +71,6 @@ nodo * AgregarFinal (nodo * lista, nodo * nuevonodo)
    if(lista == NULL)
    {
        lista = nuevonodo;
-
    }
    else
    {

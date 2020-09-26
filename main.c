@@ -31,7 +31,7 @@ int main()
    printf("Lista \n ");
    printf("\n--------------------------------------------------------------------\n");
 
-   Recorre_Mostrar_Recursivamente(lista);
+   Mostrar_Lista_Recursivamente(lista);
 
    printf("\n--------------------------------------------------------------------\n");
 
@@ -44,14 +44,13 @@ int main()
 
    printf("\n--------------------------------------------------------------------\n");
 
-    printf("listas recursivas invertida: \n");
+   printf("listas recursivas invertida: \n");
 
     nodo * invertidoRecursivo = IncioLista();
 
     invertidoRecursivo = Invertir_Lista_Recursion(lista);
 
-//    Recorre_Mostrar_Recursivamente(invertidoRecursivo);
-    MostrarLista(invertidoRecursivo);
+    Mostrar_Lista_Recursivamente(invertidoRecursivo);
 
     printf("\n--------------------------------------------------------------------\n");
 
