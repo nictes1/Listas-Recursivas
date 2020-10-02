@@ -64,7 +64,6 @@ void Mostrar_Elementos_Pares_Recursion (nodo * lista)  ///Arranca de 1
 }
 
 // 4. Invertir una lista cambiando los vínculos.
-
 nodo * Invertir_Lista_Recursion (nodo * lista)
 {
     nodo * aux = NULL;
@@ -72,11 +71,8 @@ nodo * Invertir_Lista_Recursion (nodo * lista)
     if(lista)
     {
         aux = lista;
-
         lista = lista->siguiente;
-
         aux->siguiente = NULL;
-
         lista = AgregarFinal(Invertir_Lista_Recursion(lista),aux);
     }
     return lista;

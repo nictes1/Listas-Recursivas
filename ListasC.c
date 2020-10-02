@@ -4,7 +4,6 @@
 
 
 ///Cuerpo de las Funciones Listas
-
 nodo *IncioLista ()
 {
     return NULL;
