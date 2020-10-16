@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1600983068 source:n:\nico\programacion\segundo cuatrimestre\laboratorio y programacion 2\trabajos practicos\trabajos practicos\listas recursivas\listasc.c
+1601673939 source:n:\nico\programacion\segundo cuatrimestre\laboratorio y programacion 2\trabajos practicos\trabajos practicos\listas recursivas\listasc.c
 	"Listas.h"
 	"Persona.h"
 	"ListasRecursivas.h"
@@ -31,7 +31,7 @@
 	"Persona.h"
 	"ListasRecursivas.h"
 
-1601077895 source:n:\nico\programacion\segundo cuatrimestre\laboratorio y programacion 2\trabajos practicos\trabajos practicos\listas recursivas\lstasrecursivas.c
+1601664311 source:n:\nico\programacion\segundo cuatrimestre\laboratorio y programacion 2\trabajos practicos\trabajos practicos\listas recursivas\lstasrecursivas.c
 	<stdio.h>
 	<stdlib.h>
 	"Listas.h"

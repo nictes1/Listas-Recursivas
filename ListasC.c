@@ -56,9 +56,9 @@ nodo *BuscarNodoEspecifico (nodo * lista , char nombre[20])
 
     if(seg!=NULL)
     {
-        while(strcmp(nombre, seg->siguiente)!=0)
+        while(strcmp(nombre, seg->dato.nombre)!=0)
         {
-            seg=seg->siguiente;
+            seg = seg->siguiente;
         }
     }
 
